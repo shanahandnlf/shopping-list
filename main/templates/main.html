@@ -3,7 +3,7 @@
 {% block content %}
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">You are logged in as {{ name }} </a>
+      <a class="navbar-brand" >You are logged in as {{ name }} </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -43,7 +43,7 @@
     <h1>Shopping List Page</h1>
 
     <h5>Name:</h5>
-    <p>{{name}}</p>
+    <p>{{ name }}</p>
 
     <h5>Class:</h5>
     <p>{{class}}</p>
@@ -86,12 +86,6 @@
     <a href="{% url 'main:create_product' %}">
         <button>
             Add New Product
-        </button>
-    </a>
-
-    <a href="{% url 'main:logout' %}">
-        <button>
-            Logout
         </button>
     </a>
 
